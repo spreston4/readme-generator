@@ -1,7 +1,9 @@
 // Declare packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const fetch = require('node-fetch');
 const generateMarkdown = require('./utils/generateMarkdown');
+const licenseLookup = require('./utils/licenseLookup');
 
 // Declare array 'questions' of questions for user input
 const questions = [
@@ -25,7 +27,12 @@ const questions = [
         message: 'Enter Usage Instructions for your project: ',
         name:'usage',
     },
-    // License Info here
+    {
+        type: 'list',
+        message: 'Select a license: ',
+        name: 'license',
+        choices: licenseLookup,
+    },
     {
         type: 'input',
         message: 'Enter any Contribution Guidelines for your project: ',
@@ -65,7 +72,7 @@ function init() {
         // Then 'generateMarkdown' & 'writeToFile'
         .then((answers) => {
         
-            writeToFile('gen-README.md', answers);
+            writeToFile('./example/gen-README.md', answers);
 
         })
 }

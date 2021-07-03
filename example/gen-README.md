@@ -2,14 +2,14 @@
   # Sam
 
   ## Description
-  
+
   Preston
 
   ## Table of Contents
 
   - [Installation](#installation)
   - [Usage Information](#usage-information)
-  - [License Information](#usage-information)
+  - [License Information](#license-information)
   - [Contribution Guidelines](#contribution-guidelines)
   - [Test Instructions](#test-instructions)
   - [Questions](#questions)
@@ -18,18 +18,18 @@
   To install the necessary dependencies for this project, run the following command:
 
   ```
-  NPM INSTALL
+  Install
   ```
 
   ## Usage Information
 
-  Run node index.js from command line
+  No
 
   ## License Information
 
   ## Contribution Guidelines
 
-  Contact me via Github or e-mail to discuss project contributions.
+  None
 
   ## Test Instructions
 
