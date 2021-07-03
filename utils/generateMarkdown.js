@@ -19,8 +19,18 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
+  - [Installation](#installation)
+  - [Usage Information](#usage-information)
+  - [License Information](#usage-information)
+  - [Contribution Guidelines](#contribution-guidelines)
+  - [Test Instructions](#test-instructions)
+  - [Questions](#questions)
 
   ## Installation
+  To install the necessary dependencies for this project, run the following command:
+  \`\`\`
+  ${data.install}
+  \`\`\`
 
   ## Usage Information
 
@@ -28,7 +38,7 @@ function generateMarkdown(data) {
 
   ## Contribution Guidelines
 
-  ## Tests
+  ## Test Instructions
 
   ## Questions
 
