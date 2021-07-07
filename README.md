@@ -8,7 +8,7 @@ A command-line application that allows the user to dynamically create a professi
 
 [Example: Generated README](./example/gen-README.md)
 
-![Example Video](./utils/images/example.gif)
+![Example Video](./utils/images/example2.gif)
 
 ## Technologies used
 

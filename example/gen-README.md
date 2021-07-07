@@ -34,13 +34,13 @@
 
   ## Test Instructions
 
-  No test instructions.
+  None
 
   ## Questions
 
   Please contact me via GitHub or e-mail with any questions, comments, or concerns about this project. Thanks!
 
-  GitHub: [Spreston4](https://github.com/Spreston4)
+  GitHub: [spreston4](https://github.com/spreston4)
 
-  E-mail: [Sam.preston11@gmail.com](mailto:Sam.preston11@gmail.com)
+  E-mail: [sam.preston11@gmail.com](mailto:sam.preston11@gmail.com)
 
