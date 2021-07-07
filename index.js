@@ -58,7 +58,7 @@ const questions = [
 // Function 'writeToFile' to write 'generateMarkdown' to a README file
 function writeToFile(fileName, data) {
 
-    fs.writeFile(fileName, generateMarkdown(data), (err) =>
+    fs.writeFile(fileName, generateMarkdown.generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log('Success!'))
 }
 
@@ -71,7 +71,8 @@ function init() {
 
         // Then 'generateMarkdown' & 'writeToFile'
         .then((answers) => {
-        
+
+            // Write to file
             writeToFile('./example/gen-README.md', answers);
 
         })

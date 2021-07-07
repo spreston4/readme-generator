@@ -1,7 +1,8 @@
+// Declare needed packages
 const fetch = require('node-fetch');
 
-// Establish array to hold values
-let licenseArr = [];
+// Declare array to hold values
+let licenseArr = ['No license'];
 
 // Function licenseLookup creates an array of all available licenses on GitHub
 function licenseLookup() {
@@ -19,7 +20,7 @@ function licenseLookup() {
         
                 // Add names of available licenses to array
                 for (let i = 0; i < data.length; i++) {
-                    licenseArr.push(data[i].name);
+                    licenseArr.push(data[i].key);
                 }
             })
 }
