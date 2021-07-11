@@ -1,6 +1,8 @@
 
   # Trivia Challenge
 
+  ![License Badge](https://img.shields.io/static/v1?label=License&message=MIT-License&color=success)
+
   ## Description
 
   This application is a timed trivia challenge featuring 6 multiple-choice questions. Users will start the game and take the challenge. After answering all question, or the time runs out, the game will end. After the game ends the user is prompted to save their highscore. Users can navigate to, and reset, the highscore page at any point. This application will run in the browser and features dynamically updated HTML and CSS powered by JavaScript. It has a clean, polished, and responsive user interface that adapts to multiple screen sizes.
@@ -18,19 +20,20 @@
   To install the necessary dependencies for this project, run the following command:
 
   ```
-  npm install
+  NPM Install
   ```
 
   ## Usage Information
 
-  Once the application loads, follow instructions from the landing page.
+  Follow directions from landing screen
 
   ## License Information
-  This section is not currently functioning.
+
+  This application is licensed under MIT License.
 
   ## Contribution Guidelines
 
-  Contact me via GitHub or e-mail (listed below) to contribute to this project.
+  Contact me at github or email
 
   ## Test Instructions
 

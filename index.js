@@ -12,47 +12,47 @@ const questions = [
         message: 'Enter the Title of your project: ',
         name: 'title',
     },
-    // {
-    //     type: 'input',
-    //     message: 'Enter a Description of your project: ',
-    //     name: 'description',
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Enter Installation Instructions for your project: ',
-    //     name: 'install',
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Enter Usage Instructions for your project: ',
-    //     name:'usage',
-    // },
+    {
+        type: 'input',
+        message: 'Enter a Description of your project: ',
+        name: 'description',
+    },
+    {
+        type: 'input',
+        message: 'Enter Installation Instructions for your project: ',
+        name: 'install',
+    },
+    {
+        type: 'input',
+        message: 'Enter Usage Instructions for your project: ',
+        name:'usage',
+    },
     {
         type: 'list',
         message: 'Select a license: ',
         name: 'license',
         choices: licenseLookup,
     },
-    // {
-    //     type: 'input',
-    //     message: 'Enter any Contribution Guidelines for your project: ',
-    //     name: 'contribution'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Enter any Test Instructions for your project: ',
-    //     name: 'test'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Enter your GitHub username: ',
-    //     name: 'username'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Enter your e-mail address: ',
-    //     name: 'email'
-    // },
+    {
+        type: 'input',
+        message: 'Enter any Contribution Guidelines for your project: ',
+        name: 'contribution'
+    },
+    {
+        type: 'input',
+        message: 'Enter any Test Instructions for your project: ',
+        name: 'test'
+    },
+    {
+        type: 'input',
+        message: 'Enter your GitHub username: ',
+        name: 'username'
+    },
+    {
+        type: 'input',
+        message: 'Enter your e-mail address: ',
+        name: 'email'
+    },
 ];
 
 // Function 'writeToFile' to write 'generateMarkdown' to a README file
@@ -71,12 +71,9 @@ function init() {
 
         // Then 'generateMarkdown' & 'writeToFile'
         .then((answers) => {
-
             
-            // generateMarkdown.fetchLicense(answers.license);
-            console.log(generateMarkdown.generateMarkdown(answers));
-            // // Write to file
-            // writeToFile('./example/gen-README.md', answers);
+            // Write to file
+            writeToFile('./example/gen-README.md', answers);
 
         })
 }

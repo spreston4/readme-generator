@@ -1,49 +1,51 @@
 // Declare packages
 const fetch = require('node-fetch');
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+// // TODO: Create a function that returns a license badge based on which license is passed in
+// // If there is no license, return an empty string
+// function renderLicenseBadge(license) {}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// // TODO: Create a function that returns the license link
+// // If there is no license, return an empty string
+// function renderLicenseLink(license) {}
   
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// // TODO: Create a function that returns the license section of README
+// // If there is no license, return an empty string
 
-// Could not get this function to return anything other than 'undefined' when trying to call it from 'generateMarkdown'
-function renderLicenseSection(license) {
+// // Could not get this function to return anything other than 'undefined' when trying to call it from 'generateMarkdown'
+// function renderLicenseSection(license) {
 
-  // Declare fetch URL
-  let fetchURL = 'https://api.github.com/licenses/' + license;
+//   // Declare fetch URL
+//   let fetchURL = 'https://api.github.com/licenses/' + license;
 
-  // Fetch data
-  fetch
-  fetch(fetchURL)
-    .then(function (response) {
+//   // Fetch data
+//   fetch
+//   fetch(fetchURL)
+//     .then(function (response) {
 
-      // Validate there is a lisence selected
-      if (response.status != 200){
-        console.log('No license selected');
-        return 'No license selected';
-      }
+//       // Validate there is a lisence selected
+//       if (response.status != 200){
+//         console.log('No license selected');
+//         return 'No license selected';
+//       }
 
-      return response.json();
-    })
-    .then(function (data) {
+//       return response.json();
+//     })
+//     .then(function (data) {
 
-      renderLicenseLink(data);
+//       renderLicenseLink(data);
 
-    })
-}
+//     })
+// }
 
 
-// TODO: Create a function to generate markdown for README
+// Function 'generateMarkdown' creates the mardown language that is written to the README file
 function generateMarkdown(data) {
 
   let markdownRender =  `
   # ${data.title}
+
+  ![License Badge](https://img.shields.io/static/v1?label=License&message=${data.license.split(' ').join('-')}&color=success)
 
   ## Description
 
@@ -70,7 +72,8 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License Information
-  This section is not currently functioning.
+
+  This application is licensed under ${data.license}.
 
   ## Contribution Guidelines
 

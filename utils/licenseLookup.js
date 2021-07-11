@@ -20,7 +20,7 @@ function licenseLookup() {
         
                 // Add names of available licenses to array
                 for (let i = 0; i < data.length; i++) {
-                    licenseArr.push(data[i].key);
+                    licenseArr.push(data[i].name);
                 }
             })
 }

@@ -1,4 +1,5 @@
 # README Generator
+![GitHub top language](https://img.shields.io/github/languages/top/spreston4/readme-generator)
 
 ## Description
 
@@ -8,7 +9,7 @@ A command-line application that allows the user to dynamically create a professi
 
 [Example: Generated README](./example/gen-README.md)
 
-![Example Video](./utils/images/example2.gif)
+![Example Video](./utils/images/example3.gif)
 
 ## Technologies used
 
@@ -16,6 +17,10 @@ Built in visual Studio with:
 * Node.js
 * JavaScript / jQuery
 * GitHub API
+* Shield.io
+* Inquirer Package
+* FS Package
+* Node-fetch Package
 
 ## How to
 
@@ -58,12 +63,6 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
-
-## Known Issues
-
-* License information does not currently render
-* License badging does not currently render
-
 
 ## Contact Me
 
