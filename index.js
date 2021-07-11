@@ -1,7 +1,6 @@
 // Declare packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const fetch = require('node-fetch');
 const generateMarkdown = require('./utils/generateMarkdown');
 const licenseLookup = require('./utils/licenseLookup');
 
